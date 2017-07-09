@@ -21,13 +21,23 @@
     <script type="text/javascript" src="js/main.js"></script>
     <!--    FULLPAGE>JS-->
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 sectionsColor: ['#272727'],
-                anchors: [''],
+                anchors: ['1', '2', '3', '4'],
                 menu: '#menu',
+                css3: true,
+                scrollingSpeed: 700,
+                easing: 'none',
+                easingcss3: 'none',
+                autoScrolling: true,
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: false,
+
             });
         });
 
@@ -36,23 +46,47 @@
 
 
 <body>
-    <div class="loader"><img src="media/loader.gif" alt="loader"></div>
-
+    <!--    <div class="loader"><img src="media/loader.gif" alt="loader"></div>-->
     <div class="video">
-        <!--
-<video id="bgvid" autoplay muted>
+        <video id="bgvid" autoplay muted>
         <source src="media/intro.mp4" type="video/mp4">
         </video>
--->
     </div>
 
-    <div class="header">
-        <h1>PRAESTANTIA<small>'17</small></h1>
-    </div>
-<!--
-<div class="card card-1"></div>
-<div class="card card-2"></div>
+    <div id="fullpage">
+
+        <div class="section">
+            <div class="header">
+                <h1>PRAESTANTIA<small>'17</small></h1>
+            </div>
+            <!--
+<div class="card card-1">
+    <h1>one</h1>
+</div>
+<div class="card card-2">
+    <h2>two</h2>
+</div>
 -->
+
+        </div>
+        <div class="section">
+            <div class="header">
+                <h1>PRAESTANTIA<small>'17</small></h1>
+            </div>
+        </div>
+        <div class="section">
+            <div class="header">
+                <h1>PRAESTANTIA<small>'17</small></h1>
+            </div>
+        </div>
+        <div class="section">
+            <div class="header">
+                <h1>PRAESTANTIA<small>'17</small></h1>
+            </div>
+        </div>
+    </div>
+
+
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
