@@ -1,8 +1,18 @@
+html {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
 body {
     margin: 0px;
-    background-color: #272727;
-    position: fixed;
-    overflow-y: scroll;
+    /*    background-color: #272727;*/
+    background-image: url(../media/bg.png);
 }
 
 #bgvid {
@@ -40,7 +50,13 @@ body {
     letter-spacing: 5px;
 }
 
+.section {
+    position: relative;
+}
+
 .card {
+    background-color: #272727;
+    position: absolute;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.28), 0 4px 20px 0 rgba(0, 0, 0, 0.3);
     max-height: 350px;
     max-width: 325.22px;
@@ -48,14 +64,7 @@ body {
 }
 
 .card-1 {
-    margin: 50px 50px;
+    margin: 200px 450px;
     min-height: 300px;
     min-width: 500px;
-}
-
-.card-2 {
-    margin-top: -1000px;
-    margin: 50px 50px;
-    min-height: 200px;
-    min-width: 100px;
 }

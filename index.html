@@ -4,7 +4,6 @@
 <head>
 
     <title>Praestantia</title>
-
     <meta http-equiv="Content-Type" content="text/html; charset = utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -15,7 +14,9 @@
     <!--Add your .css file-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
+    <!--AOS-->
+    <link rel="stylesheet" href="css/aos.css" />
+    <script src="js/aos.js"></script>
     <!--External jQuery Plugin-->
 
     <script type="text/javascript" src="js/main.js"></script>
@@ -26,8 +27,8 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                sectionsColor: ['#272727'],
-                anchors: ['1', '2', '3', '4'],
+                sectionsColor: [],
+                anchors: [],
                 menu: '#menu',
                 css3: true,
                 scrollingSpeed: 700,
@@ -47,47 +48,51 @@
 
 <body>
     <!--    <div class="loader"><img src="media/loader.gif" alt="loader"></div>-->
-    <div class="video">
-        <video id="bgvid" autoplay muted>
+    <!--
+<div class="video">
+    <video id="bgvid" autoplay muted>
         <source src="media/intro.mp4" type="video/mp4">
         </video>
-    </div>
+</div>-->
 
-    <div id="fullpage">
 
-        <div class="section">
-            <div class="header">
-                <h1>PRAESTANTIA<small>'17</small></h1>
-            </div>
-            <!--
-<div class="card card-1">
+    <div class="section">
+<!--
+<div data-aos="fade-down-left" data-aos-duration="3000" data-aos-easing="ease-out-cubic" class="card card-1">
     <h1>one</h1>
 </div>
-<div class="card card-2">
-    <h2>two</h2>
-</div>
 -->
-
+        <div class="card card-2 card-1">
+            <h1>on</h1>
         </div>
-        <div class="section">
-            <div class="header">
-                <h1>PRAESTANTIA<small>'17</small></h1>
-            </div>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h1>PRAESTANTIA<small>'17</small></h1>
-            </div>
-        </div>
-        <div class="section">
-            <div class="header">
-                <h1>PRAESTANTIA<small>'17</small></h1>
-            </div>
-        </div>
+        
     </div>
 
-
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#272727'],
+                anchors: ['1', '2', '3', '4'],
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 700,
+                easing: 'none',
+                easingcss3: 'none',
+                autoScrolling: true,
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: false,
+
+            });
+        });
+
+    </script>
+    <script>
+        AOS.init();
+
+    </script>
 </body>
 
 </html>
