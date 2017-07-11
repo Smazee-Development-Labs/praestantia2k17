@@ -13,6 +13,7 @@ body {
     margin: 0px;
     /*    background-color: #272727;*/
     background-image: url(../media/bg.png);
+    background-attachment: fixed;
 }
 
 #bgvid {
